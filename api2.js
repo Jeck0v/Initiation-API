@@ -6,7 +6,7 @@ const PORT = 3000;
 
 app.get('/scrape', async (req, res) => {
   try {
-    const url = 'https://example.com';
+    const url = 'https://XXXXXXX.com';
     const { data } = await axios.get(url);
     const $ = cheerio.load(data);
     const title = $('title').text();
