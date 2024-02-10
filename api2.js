@@ -14,7 +14,7 @@ app.get('/scrape', async (req, res) => {
     res.json({ title, metaDescription });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Erreur lors du scraping' });
+    res.status(500).json({ error: 'Erreur détecter' });
   }
 });
 app.listen(PORT, () => {
